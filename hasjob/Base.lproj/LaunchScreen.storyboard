@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,42 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hg" translatesAutoresizingMaskIntoConstraints="NO" id="lfg-i1-LpZ">
+                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="Ctx-Mm-jeD"/>
+                                    <constraint firstAttribute="width" constant="320" id="WDK-Mg-Lq4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The HasGeek Job Board" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaR-tn-4Xm">
+                                <rect key="frame" x="226" y="520" width="219" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="0.52156862745098043" green="0.41568627450980389" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hasjob:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEH-0A-Z6O">
+                                <rect key="frame" x="148" y="520" width="70" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="0.92156862745098034" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JaR-tn-4Xm" firstAttribute="leading" secondItem="pEH-0A-Z6O" secondAttribute="trailing" constant="8" id="09O-Rb-Smc"/>
+                            <constraint firstItem="lfg-i1-LpZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GpO-MJ-C2I"/>
+                            <constraint firstItem="pEH-0A-Z6O" firstAttribute="centerY" secondItem="JaR-tn-4Xm" secondAttribute="centerY" id="MAk-MR-3kj"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="JaR-tn-4Xm" secondAttribute="bottom" constant="57" id="WKQ-0Q-gZh"/>
+                            <constraint firstItem="lfg-i1-LpZ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="YB4-zz-buW"/>
+                            <constraint firstItem="JaR-tn-4Xm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="35" id="eXw-sq-IbG"/>
+                            <constraint firstItem="JaR-tn-4Xm" firstAttribute="top" secondItem="lfg-i1-LpZ" secondAttribute="bottom" constant="60" id="q5E-fw-xRp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="q5E-fw-xRp"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +59,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hg" width="1024" height="1024"/>
+    </resources>
 </document>

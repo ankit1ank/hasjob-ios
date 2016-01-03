@@ -1,5 +1,5 @@
 PODS:
-  - Kanna (1.0.2)
+  - Kanna (1.0.3)
   - SwiftHTTP (1.0.2)
 
 DEPENDENCIES:
@@ -7,7 +7,7 @@ DEPENDENCIES:
   - SwiftHTTP (~> 1.0.0)
 
 SPEC CHECKSUMS:
-  Kanna: 059afb193a9f8ea34f46cb55a8b11bf4257efad8
+  Kanna: 10c7f20762846e808ec5716e4191427bd71bf1c2
   SwiftHTTP: 6d8ca031a9ce613a01e8f18b497503887b0b50c0
 
 COCOAPODS: 0.39.0
